@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS-Tricks</title>
+        <style>
+        #header{
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            float: left;
+            line-height: 30px;
+        }
+        .image2{
+            float: right;
+            height: 35px;
+            width: 35px;
+            padding: 7px;
+        }
+        #search{
+            float:right;
+            padding: 5px;
+        }
+        body {
+            background: linear-gradient(lightgrey, orange);
+        }
+        .image1{
+            padding-left: 20px;
+            padding-top: 5px;
+            margin-bottom: -15px;
+            margin-left: -10px;
+            height: 40px;
+            width: 180px;
+            float: left;
+        }
+
+        span{
+            color: white;
+            line-height: 20px;
+            padding: 5px;
+            margin-left: 30px;
+            font-size: 12px;
+        }
+        span.special{
+            background-color: orange;
+
+        }
+
+        #content_left{
+            float: left;
+            width: 57%;
+            height: 80%;
+        }
+        #content_right{
+            float: right;
+            width: 25%;
+            height: 80%;
+        }
+        #left-bar1{
+            margin-top: 80px;
+            margin-left: 30px;
+            float: left;
+            height: 100%;
+            width: 100%;
+            padding:20px;
+            background-color: white;
+            border-radius: 15px;
+    border:solid 1px white;
+        }
+        #right-bar1{
+            margin-top: 80px;
+            margin-right: 20px;
+            float: right;
+            height: 40%;
+            width: 100%;
+            padding:10px;
+            background-color: white;
+            border-radius: 15px;
+    border:solid 1px white;
+        }
+        #left-bar2{
+            margin-top: 50px;
+            margin-left: 30px;
+            float: left;
+            height: 50%;
+            width: 100%;
+            padding:20px;
+            background-color: white;
+            border-radius: 15px;
+    border:solid 1px white;
+}
+
+#right-bar2{
+    margin-top: 50px;
+    margin-right: 20px;
+    float: right;
+    height: 100%;
+    width: 100%;
+    padding:10px;
+    background-color: white;
+    border-radius: 15px;
+border:solid 1px white;
+}
+#left-bar3{
+    margin-top: 50px;
+    margin-left: 30px;
+    float: left;
+    height: 50%;
+    width: 100%;
+    padding:20px;
+    background-color: white;
+    border-radius: 15px;
+border:solid 1px white;
+}
+.image3{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+.image4{
+    margin-top: 10px;
+    height: 100%;
+    width: 95%;
+    padding: 5px;
+}
+#right-bar3{
+    margin-top: 50px;
+    margin-right: 20px;
+    float: right;
+    height: 100%;
+    width: 100%;
+    padding:10px;
+    background-color: white;
+    border-radius: 15px;
+border:solid 1px white;
+}
+.image5{
+    margin-top: 10px;
+    height: 100%;
+    width: 95%;
+    padding: 5px;
+}
+
+.image6{
+    margin-top: 10px;
+    height: 30%;
+    width: 40%;
+    padding: 5px;
+    float: left;;
+}
+.image7{
+    margin-top: 10px;
+    height: 30%;
+    width: 40%;
+    padding: 5px;
+    float: left;
+}
+
+
+#special_left{
+    margin-top: 50px;
+    margin-left: 30px;
+    float: left;
+    height: 100%;
+    width: 47%;
+    padding:15px;
+    background-color: white;
+    border-radius: 15px;
+border:solid 1px white;
+}
+
+#special_right{
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: -80px;
+    float: right;
+    height: 100%;
+    width: 47%;
+    padding:15px;
+    background-color: white;
+    border-radius: 15px;
+border:solid 1px white;
+}
+
+#footer1{
+    width: 100%;
+    height: 30%;
+    float:left;
+}
+.foot1{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+#searchbar{
+    text-align: center;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.foot1_left{
+    float: left;
+    color: white;
+    text-align: left;
+}
+#footer2{
+    width: 40%;
+    height: 30%;
+    margin-top: 100px;
+}
+
+.image8{
+    float: right;
+    height: 30%;
+    width: 30%;
+}
+#footer3{
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    float: left;
+    line-height: 50px;
+}
+span.special2{
+    color: white;
+    line-height: 20px;
+    padding: 30px;
+    margin-left: 0px;
+    font-size: 12px;
+    text-indent: 20px;
+}
+        </style>
+    </head>
+    <body>
+
+
+
+        <div id="header">
+        <img class="image1" src="css-tricks_logo.png" alt="Logo" />
+        <span class="special">Blog</span><span>Videos</span><span>Almanac</span><span>Snipets</span><span>Forums</span><span>Shop</span><span>Lodge</span><span>Jobs</span>
+        <form id="search" action="comments.php">
+            <textarea name="comments" cols="15" rows="1">e.g. flexbox</textarea>
+        </form>
+        <img class="image2" src="img1.png" alt="Silouette" />
+    </div>
+<div id="content_left">
+        <div id="left-bar1">September 7, 2016<h1>Make a Super Quick Little Slider to Play with Some Values</h1><p>
+            BY CHRIS COVIER<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a nisi purus. Maecenas vel metus vel odio fermentum dapibus id non elit. Sed et felis sodales, luctus augue eu, tincidunt ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam fringilla commodo arcu a finibus. Quisque vel pellentesque nisi, vel pellentesque leo.
+        </p></div>
+        <div id="left-bar2">
+            September 7, 2016<h1>Make a Super Quick Little Slider to Play with Some Values</h1><p>
+                BY CHRIS COVIER<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a nisi purus. Maecenas vel metus vel odio fermentum dapibus id non elit. Sed et felis sodales, luctus augue eu, tincidunt ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam fringilla commodo arcu a finibus. Quisque vel pellentesque nisi, vel pellentesque leo.
+            </p></div>
+        <div id="left-bar3">September 6, 2016<h2>The Math of CSS Locks</h2><p>
+            Curabitur posuere massa fermentum metus maximus viverra. Maecenas maximus accumsan hendrerit. Nunc pharetra magna in lectus vulputate, sed posuere metus lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque tortor eu ipsum interdum rhoncus. Quisque pretium tellus non consectetur pulvinar. In a ipsum in leo ultrices molestie vitae at erat. Sed nec arcu nulla. Nam eleifend eleifend eros ut elementum. Pellentesque risus turpis, commodo sit amet elementum id, lobortis eu sapien. Proin quis lobortis odio. Suspendisse fringilla turpis ut tortor lacinia sollicitudin. Proin velit felis, hendrerit et nunc non, congue cursus purus. Etiam laoreet eget erat non efficitur.
+            <img class="image4" src="img4.png" alt="CSS Code" />
+
+
+        </p></div>
+<div id="special_left">
+
+        <img class="image6" src="img5.png" alt="img" /><br /><br /><br /><br /><br /><br />
+            <strong>Responsive image service</strong>
+        <p>
+            Bring truly responsive images to your site.<br />
+        </p></div>
+
+<div id="special_right">
+    <img class="image7" src="img6.png" alt="Divi" /><br /><br /><br /><br /><br /><br />
+        <strong>The Divi Theme</strong>
+    <p>
+        Download the Ultimate WordPRess Theme including our advanced.
+    </p></div>
+</div>
+    <div id="content_right">
+
+
+        <div id="right-bar1"><h2>>_job board</h2><p>
+            <strong>Trade Skips</strong> is hiring a front end developer<br /><br /><strong>X-Team International</strong> is hiring a Frontend Developers.
+        </p>
+        </div>
+        <div id="right-bar2">
+            <img class="image3" src="img2.png" alt="MT"><p>
+                 et urna porttitor, vel iaculis velit auctor. Etiam sed sapien at justo egestas accumsan faucibus id nulla. Aliquam non erat eleifend, ullamcorper felis a, malesuada augue. Proin vestibulum lectus sed sapien vestibulum, lacinia vehicula odio tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum nibh ac ligula
+            </p></div>
+        <div id="right-bar3">
+        <img class="image5" src="img3.png" alt="scribble" />
+        <p>Build custon web forms easily.</p>
+        </div>
+        </div>
+        <div id="footer1">
+            <h3 class="foot1">We have a pretty good* newsletter.
+            </h3>
+            <div id="searchbar">
+        <form method='GET' action='search.php'>
+    <input type="text" placeholder="Search Database" name="searchkey" id="searchkey" />
+    <input type="submit" name="Subscribe">
+    </form>
+    </div>
+    <div id="footer2">
+        <p class="foot1_left">
+            In pharetra volutpat turpis in consequat. Nulla sodales erat ante, vitae lacinia libero ornare in. Donec vulputate turpis et eros venenatis, vitae pulvinar augue eleifend. Mauris congue vestibulum nisi, vel pulvinar odio aliquam vel. Praesent eget varius nulla, vel scelerisque tellus. Cum sociis natoque penatibus et magnis dis parturient montes
+        </p>
+    </div>
+        <img class="image8" src="img8.png" alt="otherlogo" />
+        </div>
+        <div id="footer3">
+            <span class="special2">Contact</span><span class="special2">About</span><span class="special2">Archives</span><span class="special2">Advertise</span><span class="special2">Guest Posting</span><span class="special2">License</span><span class="special2">Shop</span><span class="special2">Subscribe</span>
+        </div>
+
+    </body>
+</html>
