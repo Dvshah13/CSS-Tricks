@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" href="./mozilla_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./mozilla_files/css" rel="stylesheet">
+    <title>mozilla</title>
+    <style>
+        .example6 {
+            background-color: red;
+            margin-bottom: 0px !important;
+        }
+
+        .example6 .navbar-brand {
+            background: url(mozilla-logo.png) center / contain no-repeat;
+            width: 200px;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .navbar-right a {
+            color: white !important;
+        }
+
+        .active a {
+            background-color: green !important;
+        }
+
+        .wrapper {
+            display: inline-block;
+            margin-top: 0;
+            position: relative;
+        }
+
+        .wrapper img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .wrapper .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25);
+            /*color: darkblue;
+            font-family: "Indie Flower";*/
+        }
+
+        .wrapper .overlay .int {
+            color: darkblue;
+            font-family: "Indie Flower";
+            font-size: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 50px;
+        }
+
+        .wrapper .overlay .p1 {
+            color: darkblue;
+            font-family: "Indie Flower";
+            font-size: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            margin-top: 150px;
+        }
+
+        .center-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            height: 21%;
+            width: 11%;
+        }
+
+        .int2 {
+            color: white;
+            padding: 2px;
+        }
+
+        .p2 {
+            color: white;
+            font-size: 18px;
+            margin-top: 300px;
+        }
+
+        .p3 {
+            color: white;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+
+        .avatar1 {
+            height: 30%;
+            width: 30%;
+            padding: 10px;
+        }
+
+        .profile2 {
+            background-color: teal;
+            color: white;
+        }
+
+        .middle {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .middle p{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .middle img {
+            height: 25%;
+            width: 25%;
+        }
+
+        .foot1 {
+            background-color: red;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .foot1 img {
+            height: 15%;
+            width: 15%;
+            margin-left: 300px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        .form-control {
+            margin-top: 10px;
+            height: 35px;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            border-color: white;
+            margin-top: 10px;
+            height: 35px;
+            padding: 5px;
+        }
+
+        .bottom_font{
+            font-size: 10px;
+            text-align: left;
+        }
+
+        .footer {
+            color: white;
+            background-color: gray;
+        }
+        .footer img{
+            height: 25px;
+            width: 80px;
+            text-align: left;
+        }
+        .footer ul{
+            display: inline-block;
+        }
+
+        .unlist1 {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .unlist2 {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .midlist2 {
+            list-style-type: none;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .midlist2 a {
+            color: white;
+            text-decoration: underline;
+            height: 50%;
+        }
+
+        .midlist2 .g1 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("gaming.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+
+        .midlist2 .g2 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("vr.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+
+        .midlist2 .g3 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("servo.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+
+        .midlist2 .g4 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("rust.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+
+        .midlist1 {
+            list-style-type: none;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .midlist1 a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .midlist1 .m1 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("encryption.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+
+        .midlist1 .m2 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("teach_the_web.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+
+        .midlist1 .m3 {
+            margin: 0;
+            padding: 30px;
+            list-style: none;
+            background-image: url("toolkit.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-static-top example6">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-hide" href="http://mozilla.com/">Mozilla
+                </a>
+            </div>
+            <div id="navbar6" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">ABOUT</a></li>
+                    <li>
+                        <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">PARTICIPATE</a></li>
+                    <li>
+                        <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">FIREFOX</a></li>
+                    <li>
+                        <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">DONATE</a></li>
+                    <li class="active"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">DOWNLOAD FIREFOX</a></li>
+
+                </ul>
+                
+                
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+    
+    
+    
+    
+    <!--/.nav-collapse -->
+    
+    <!--/.container-fluid -->
+    
+    
+
+
+    <div class="wrapper">
+        <img src="./mozilla_files/background1.png" alt="">
+        <div class="overlay">
+            <h1 class="int">INTERNET FOR PEOPLE NOT PROFIT</h1>
+            <p class="p1">
+                Hi. We're Mozilla, the proudly non-profit champion of the internet, helping to keep it healthy, open and accessible to all.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="profile1 col-md-6"><img class="avatar1" src="./mozilla_files/m-logo.png" alt="">
+            <h2>Our Impact</h2>
+            <p>
+                Working at the grassroots and policy levels, we teach web literacy, provide tools and advocate on behalf of every individual who values an internet built on fairness, inclusion and respect.
+            </p>
+            <ul class="midlist1">
+                <li class="m1"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Stand Up For Encryption</a></li>
+                <li class="m2"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Teach The Web</a></li>
+                <li class="m3"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Try the Lean Data Toolkit</a></li>
+            </ul>
+        </div>
+        <div class="profile2 col-md-6">
+            <img class="avatar1" src="./mozilla_files/vr-high-res.png" alt="">
+            <h2>Our Innovations</h2>
+            <p>
+                Using the web as the platform, we build open, innovative technologies that allow developers to work free of closed, corporate ecosystems and create faster, safer web experiences for us all.
+            </p>
+
+            <ul class="midlist2">
+                <li class="g1"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Gaming on the Web</a></li>
+                <li class="g2"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Virtual Reality Platform</a></li>
+                <li class="g3"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Servo</a></li>
+                <li class="g4"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Rust</a></li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="wrapper">
+            <img src="./mozilla_files/background2.png" alt="">
+            <div class="overlay">
+                <img class="center-block" src="./mozilla_files/firefox-logo-high-res.png" alt="">
+                <h3 class="int2">Browse Freely</h3>
+                <p class="p2">
+                    Discover unlimted potential, endless possibility and a wide open Web.
+                </p>
+                <p class="p3"><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">
+            Get Firefox today
+        </a></p>
+
+            </div>
+        </div>
+        <div class="row middle">
+            <div class="profile col-sm-4"><img class="avatar" src="./mozilla_files/add-ons.png" alt="">
+                <h4><b><u>Add-ons</u></b></h4>
+                <p>
+                    Compare prices, check the weather, listen to music, send a tweet and more right from Firefox.
+                </p>
+            </div>
+            <div class="profile col-sm-4">
+                <img class="avatar" src="./mozilla_files/careers.png" alt="">
+                <h4><b>Careers</b></h4>
+                <p>
+                    Learn about the benefits of working at Mozilla and view open positions around the world.
+                </p>
+            </div>
+            <div class="profile col-sm-4">
+                <img class="avatar" src="./mozilla_files/help.png" alt="">
+                <h4><b>Need help?</b></h4>
+                <p>
+                    Get Answers to your questions about Firefox and all Mozilla products from our support team.
+                </p>
+            </div>
+
+        </div>
+        <div class="row foot1">
+            <div class="col-md-6 love1"><img class="avatar" src="./mozilla_files/newsletter.png" alt="">
+                <h3><i>Love the Web?</i></h3>
+                <p>
+                    Get the Mozilla newsletter and help us keep it open and free.
+                </p>
+            </div>
+            <div class="profile col-md-3">
+                <div class="form-group">
+				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+
+                <input type="submit" value="Sign Up Now" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                <p class="bottom_font">
+                We will only send you Mozilla-related information.
+                </p>
+			</div>
+
+            </div>
+
+
+            <div class="row footer">
+                <div class="profile col-md-4"><img class="avatar" src="./mozilla_files/mozilla-logo-footer.png" alt="">
+                    <p>Portions of this content are 1998-206 by individual mozilla.org contributers. Content available under a <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Creative Commons license</a>.
+                    </p><p>
+
+                    </p>
+                </div>
+                <div class="profile col-md-4">
+                    <ul>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Contact Us</a></li>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Donate</a></li>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Contribute to this site</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Privacy</a></li>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Cookies</a></li>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Legal</a></li>
+                        <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Report Trademark Abuse</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="profile col-md-4">
+
+
+                    <p>
+                        </p><ul>
+                            Mozilla: <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Twitter</a></li><li>
+                                <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Facebook</a>
+                            </li></ul>
+                            <ul>
+                            
+                            Firefox: <li><a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Twitter</a></li><li>
+                                <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">Facebook</a></li><li>
+                                <a href="file:///Applications/XAMPP/xamppfiles/htdocs/htdocs/Mozilla/image-assets/mozilla.html#">YouTube</a></li>
+                        </ul>
+                        Page language:
+                    <p></p>
+
+                    <p>
+                        Firefox:
+                    </p>
+                </div>
+
+
+            </div>
+
+
+
+
+
+</div></body></html>

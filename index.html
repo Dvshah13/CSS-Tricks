@@ -4,46 +4,112 @@
         <meta charset="utf-8">
         <title>CSS-Tricks</title>
         <style>
-        #header{
+        body {
+            background: linear-gradient(#ECE7E5, #DA650A);
+            margin: -2px;
+        }
+        .navbar{
             background-color: black;
             width: 100%;
-            height: 20%;
-            float: left;
-            line-height: 30px;
-        }
-        .image2{
-            float: right;
-            height: 35px;
-            width: 35px;
-            padding: 7px;
-        }
-        #search{
-            float:right;
-            padding: 5px;
-        }
-        body {
-            background: linear-gradient(lightgrey, orange);
-        }
-        .image1{
-            padding-left: 20px;
-            padding-top: 5px;
-            margin-bottom: -15px;
-            margin-left: -10px;
-            height: 40px;
-            width: 180px;
+            height: 10%;
             float: left;
         }
 
-        span{
+        .navbar img.logo{
+            float: left;
+        }
+
+        @media (max-width: 1040px){
+            .navbar img.logo {
+                float: none;
+            }
+            .navbar {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .search-widget {
+                display: none;
+            }
+            .navbar .avatar {
+                position: absolute;
+                top: 0px;
+                right:10px;
+            }
+            .navbar .navitems{
+                background-color: gray;
+                font-size: 0.8em;
+                text-align: center;
+            }
+            .navbar .navitems ul{
+                display: inline-block;
+                float: none;
+            }
+
+            .navbar .navitems li{
+                float: none;
+                display: inline-block;
+            }
+
+            .navbar .navitems li a{
+                padding: 5px 10px;
+            }
+            .footitems ul{
+                display: inline-block !important;
+                float: none!important;
+            }
+            .footitems li {
+                float: none!important;
+                display: inline-block!important;
+            }
+            .footitems li a{
+                padding: 5px 7px;
+            }
+            #content_left{
+                float:none !important;
+            }
+            #content_right{
+                float:none !important;
+                margin-left: 70px;
+                width: 60% !important;
+            }
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            text-indent: 10px;
             color: white;
-            line-height: 20px;
-            padding: 5px;
-            margin-left: 30px;
-            font-size: 12px;
+            float: left;
         }
-        span.special{
-            background-color: orange;
+        ul li{
+            float: left;
+            display: inline;
+            padding: 10px;
+            color:white;
+        }
 
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .search-widget {
+            position: absolute;
+            right: 90px;
+            top: 22px;
+            color: gray;
+            border-radius: 20px;
+        }
+
+        .search{
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        .avatar{
+            float: right;
         }
 
         #content_left{
@@ -172,7 +238,7 @@ border:solid 1px white;
 #special_right{
     margin-top: 50px;
     margin-left: 0px;
-    margin-right: -80px;
+    margin-right: -75px;
     float: right;
     height: 100%;
     width: 47%;
@@ -202,11 +268,13 @@ border:solid 1px white;
     float: left;
     color: white;
     text-align: left;
+    margin-top: 90px;
 }
 #footer2{
     width: 40%;
-    height: 30%;
-    margin-top: 100px;
+    height: 40%;
+    margin-top: 140px;
+    margin-left: 25px;
 }
 
 .image8{
@@ -214,35 +282,60 @@ border:solid 1px white;
     height: 30%;
     width: 30%;
 }
-#footer3{
+.footitems{
     background-color: black;
     width: 100%;
-    height: 30%;
+    height: 5%;
     float: left;
-    line-height: 50px;
 }
-span.special2{
-    color: white;
-    line-height: 20px;
-    padding: 30px;
-    margin-left: 0px;
-    font-size: 12px;
+.footitems ul{
+    list-style-type: none;
+    padding: 5px;
     text-indent: 20px;
+    color: white;
+}
+.footitems ul li{
+    display: inline;
+    padding: 20px;
+    text-align: center;
+}
+.footitems ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
         </style>
     </head>
     <body>
-
-
-
-        <div id="header">
-        <img class="image1" src="css-tricks_logo.png" alt="Logo" />
-        <span class="special">Blog</span><span>Videos</span><span>Almanac</span><span>Snipets</span><span>Forums</span><span>Shop</span><span>Lodge</span><span>Jobs</span>
-        <form id="search" action="comments.php">
-            <textarea name="comments" cols="15" rows="1">e.g. flexbox</textarea>
-        </form>
-        <img class="image2" src="img1.png" alt="Silouette" />
-    </div>
+        <div class="navbar cf">
+        <img class="logo" src="css-tricks_logo.png" alt="Logo" />
+        <div class="navitems cf">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Almanac</a></li>
+                <li><a href="#">Snipets</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Lodge</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        <div class="search-widget">
+            <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
+            <input id="search" placeholder="e.g. flexbox" type="search">
+</div>
+    <img class="avatar" src="img1.png" alt="Silouette" />
+</div>
+</div>
 <div id="content_left">
         <div id="left-bar1">September 7, 2016<h1>Make a Super Quick Little Slider to Play with Some Values</h1><p>
             BY CHRIS COVIER<br />
@@ -261,17 +354,18 @@ span.special2{
         </p></div>
 <div id="special_left">
 
-        <img class="image6" src="img5.png" alt="img" /><br /><br /><br /><br /><br /><br />
+        <img class="image6" src="img5.png" alt="img" />
+
+        <p class="text2">
             <strong>Responsive image service</strong>
-        <p>
             Bring truly responsive images to your site.<br />
         </p></div>
 
 <div id="special_right">
-    <img class="image7" src="img6.png" alt="Divi" /><br /><br /><br /><br /><br /><br />
-        <strong>The Divi Theme</strong>
-    <p>
-        Download the Ultimate WordPRess Theme including our advanced.
+    <img class="image7" src="img6.png" alt="Divi" />
+        <p class="text1">
+        <strong>The Divi Theme</strong><br />
+        Download the Ultimate WordPress Theme including our advanced.
     </p></div>
 </div>
     <div id="content_right">
@@ -306,9 +400,18 @@ span.special2{
     </div>
         <img class="image8" src="img8.png" alt="otherlogo" />
         </div>
-        <div id="footer3">
-            <span class="special2">Contact</span><span class="special2">About</span><span class="special2">Archives</span><span class="special2">Advertise</span><span class="special2">Guest Posting</span><span class="special2">License</span><span class="special2">Shop</span><span class="special2">Subscribe</span>
+            <div class="footitems">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Archives</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Guest Posting</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </div>
         </div>
-
     </body>
 </html>
